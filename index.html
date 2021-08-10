@@ -20,16 +20,22 @@
 
 <body>
 
+    <!-- header -->
     <header>
 
+        <!-- header heading -->
         <h1>LYNDSEY</h1>
 
+        <!-- header navigation bar -->
         <nav>
 
+            <!-- unordered list -->
             <ul>
 
+                <!-- list item -->
                 <li>
 
+                    <!-- links contained within the list item -->
                     <a href="#about-me">ABOUT</a>
 
                     <a href="#work">WORK</a>
@@ -46,20 +52,27 @@
 
     <main>
 
+        <!-- hero dahlia image -->
         <div class="hero"></div>
 
+        <!-- about me section -->
         <section id="about-me">
 
+            <!-- first container of about section -->
             <div id="about-me-div1">
 
+                <!-- about  me heading within first container -->
                 <h1>ABOUT ME</h1>
 
+                <!-- about me image within first container -->
                 <img src="./about-me-photo.JPG" alt="Lyndsey at the beach">
 
             </div>
 
+            <!-- second container of about me section -->
             <div id="about-me-div2">
 
+                <!-- about me paragraphs within second container -->
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
                 <br><br>
@@ -70,23 +83,26 @@
 
         </section>
 
+        <!-- color gradient between about me & work sections -->
         <div id="about-work-gradient"></div>
 
+        <!-- work section -->
         <section id="work">
 
+            <!-- left flex box within work section (all work images & links) -->
             <div id="work-content">
 
-                <!-- flex-direction: column so fanpage above other divs & take up full section -->
+                <!-- top container within work content (flex column) -->
                 <div id="fanpage">
 
+                    <!-- first row of work content .. image & link within top container (fanpage) -->
                     <a href="https://lyndseyjw.github.io/fanpage/" target="_blank" rel="noopener noreferrer">
 
                         <img id="fanpage-img" src="./UMHeader.jpg" alt="Umphrey's McGee playing a rock show">
 
                     </a>
 
-                    <!-- visibility: hidden & then visible on #fanpage:hover -->
-                    <!-- position: absolute|relative|fixed|sticky so on top of image -->
+                    <!-- hover box for fanpage -->
                     <div class="hover-box" id="fanpage-hover-box">
 
                         <h3>Fanpage</h3>
@@ -97,22 +113,23 @@
                 
                 </div>
 
+                <!-- bottom container within work content (flex column) -->
                 <div id="flex-rows">
 
-                    <!-- flex-direction: row so these are next to each other with 50% width -->
+                    <!-- second row of work content .. contains two flex boxes -->
                     <div id="flex-row1">
 
-                        <!-- hover: blur image -->
+                        <!-- first flex box within second row of work content (contact landing page) -->
                         <div id="contact-landing-page">
 
+                            <!-- image & link for contact landing page -->
                             <a href="https://lyndseyjw.github.io/contact-form-landing-page/" target="_blank" rel="noopener noreferrer">
 
                                 <img id="contact-lp-img" src="./contact-lp-photo.jpg" alt="pink dahlia with stem">
         
                             </a>
 
-                            <!-- visibility: hidden & then visible on #contact-landing-page:hover -->
-                            <!-- position: absolute|relative|fixed|sticky so on top of image -->
+                            <!-- hover box for contact landing page -->
                             <div class="hover-box" id="contact-lp-hover-box">
 
                                 <h3>Contact Landing Page</h3>
@@ -123,17 +140,17 @@
 
                         </div>
 
-                        <!-- hover: blur image -->
+                        <!-- second flex box within second row of work content (code refactor) -->
                         <div id="code-refactor">
 
+                            <!-- image & link for code refactor -->
                             <a href="https://lyndseyjw.github.io/marketing-website-code-refactor/" target="_blank" rel="noopener noreferrer">
 
                                 <img id="code-refactor-img" src="./digital-marketing-meeting.jpg" alt="diverse marketing team discussing strategy">
         
                             </a>
 
-                            <!-- visibility: hidden & then visible on #code-refactor:hover -->
-                            <!-- position: absolute|relative|fixed|sticky so on top of image -->
+                            <!-- hover box for code refactor -->
                             <div class="hover-box" id="code-refactor-hover-box">
 
                                 <h3>Website Accessibility Code Refactor</h3>
@@ -146,19 +163,20 @@
 
                     </div>
 
+                    <!-- third row of work content .. contains two flex boxes-->
                     <div id="flex-row2">
 
-                        <!-- hover: blur image -->
+                        <!-- first flex box within third row of work content (dawn) -->
                         <div id="dawn">
 
+                            <!-- image & link for dawn -->
                             <a href="#" target="_blank" rel="noopener noreferrer">
 
                                 <img id="dawn-img" src="./dawn-photo.jpg" alt="pink chrome rose on stack of design books">
         
                             </a>
 
-                            <!-- visibility: hidden & then visible on #dawn:hover -->
-                            <!-- position: absolute|relative|fixed|sticky, so on top of image -->
+                            <!-- hover box for dawn -->
                             <div class="hover-box" id="dawn-hover-box">
 
                                 <h3>Professional Website Design</h3>
@@ -169,17 +187,17 @@
 
                         </div>
 
-                        <!-- hover: blur image -->
+                        <!-- second flex box within third row of work content (css cheatsheet) -->
                         <div id="css-cheatsheet">
 
+                            <!-- image & link for css cheatsheet -->
                             <a href="#" target="_blank" rel="noopener noreferrer">
 
                                 <img id="cheatsheet-img" src="./css-cheatsheet-photo.jpg" alt="cascading style sheet layout with squares arranged as columns and rows">
         
                             </a>
 
-                            <!-- visibility: hidden & then visible on #css-cheatsheet:hover -->
-                            <!-- position: absolute|relative|fixed|sticky so on top of image -->
+                            <!-- hover box for css cheatsheet -->
                             <div class="hover-box" id="cheatsheet-hover-box">
 
                                 <h3>CSS Cheatsheet</h3>
@@ -196,9 +214,10 @@
             
             </div>
 
+            <!-- middle flex box within work section (divider separating work content & heading) -->
             <div id="work-divider"></div>
 
-            <!-- align-items: flex-start & justify-content: center, so top center -->
+            <!-- right flex box within work section (work heading) -->
             <div id="work-heading">
 
                 <h1>WORK</h1>
@@ -207,21 +226,25 @@
 
         </section>
 
+        <!-- color gradient between work & contact sections -->
         <div id="work-contact-gradient"></div>
 
-        <!-- flexed so next to each other -->
+        <!-- contact section -->
         <section id="contact">
 
-            <!-- justify-content: center -->
+            <!-- contact heading -->
             <h1>CONTACT ME</h1>   
 
+            <!-- contact navigation bar -->
             <nav>
-                <!-- hover effects -->
-                <!-- justify-content: center -->
+
+                <!-- unordered list -->
                 <ul>
 
+                    <!-- list item -->
                     <li>
 
+                        <!-- links contained within the list item -->
                         <a id="number" href="#">(832) 687-2196</a>
 
                         <a href="mailto:lyndseyjwatson@gmail.com">lyndseyjwatson@gmail.com</a>
@@ -238,11 +261,12 @@
 
         </section>
 
+        <!-- color gradient betwen contact section & footer -->
         <div id="contact-footer-gradient"></div>
 
     </main>
 
-    <!-- same settings as header -->
+    <!-- footer -->
     <footer>
 
         2021 Dahlia Design Studio

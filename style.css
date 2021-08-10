@@ -1,3 +1,4 @@
+/* all borders on the page will be included in the size of content */
 * {
 
     box-sizing: border-box;
@@ -6,12 +7,14 @@
 
 }
 
+/* relative position so direct descendent (header) can be absolute */
 body {
 
     position: relative;
 
 }
 
+/* header floating above hero image & slightly transparent so can see image through */
 header {
 
     background-color: #9de9bf;
@@ -24,6 +27,7 @@ header {
 
 }
 
+/* alignment & spacing of header heading */
 header h1 {
 
     display: inline-block;
@@ -35,12 +39,14 @@ header h1 {
 
 }
 
+/* alignment of header navigation bar */
 header nav {
 
     float: right;
 
 }
 
+/* alignment & spacing of unordered list within header navigation bar */
 header nav ul {
 
     display: inline-block;
@@ -49,6 +55,7 @@ header nav ul {
 
 }
 
+/* styling of links contained within the list item */
 header nav a {
 
     text-decoration: none;
@@ -59,12 +66,14 @@ header nav a {
 
 }
 
+/* color change when hover over header links */
 header nav a:hover {
 
     color: white;
 
 }
 
+/* fixed positioning of hero image */
 .hero {
 
     width: 100%;
@@ -77,12 +86,14 @@ header nav a:hover {
 
 }
 
+/* each section will take up full page */
 section {
 
     display: block;
 
 }
 
+/* style of about me section */
 #about-me {
 
     width: 100%;
@@ -90,6 +101,7 @@ section {
 
 }
 
+/* centering both containers of about me section */
 #about-me div {
 
     margin: 0 auto;
@@ -97,12 +109,14 @@ section {
 
 }
 
+/* create space between hero image & about me first container */
 #about-me-div1 {
 
     padding-top: 100px;
 
 }
 
+/* style of about me heading */
 #about-me-div1 h1 {
 
     font-size: 48px;
@@ -110,12 +124,14 @@ section {
 
 }
 
+/* create space between about me heading & image */
 #about-me-div1 img {
 
     padding-top: 40px;
 
 }
 
+/* making image round & creating a box shadow underneath */
 #about-me img {
 
     width: 300px;
@@ -126,12 +142,14 @@ section {
 
 }
 
+/* image grows on hover */
 #about-me img:hover {
 
     transform: scale(1.1);
 
 }
 
+/* style & spacing of paragraphs within sectond about me container */
 #about-me-div2 {
 
     padding-top: 55px;
@@ -143,6 +161,7 @@ section {
 
 }
 
+/* color gradient between about me & work sections */
 #about-work-gradient {
 
     width: 100%;
@@ -151,6 +170,8 @@ section {
 
 }
 
+/* work content, divider, & heading will be in a row */
+/* creating space betwen above gradient & work section */
 #work {
 
     display: flex;
@@ -160,6 +181,8 @@ section {
     
 }
 
+/* work content (photos & links) will take up 75% of the page & each container within will take up entire work content container */
+/* spacing on the left & between work section & below color gradient */
 #work-content {
 
     width: 75%;
@@ -170,6 +193,8 @@ section {
 
 }
 
+/* hover boxes will be hidden until hover over related image/link (see below) */
+/* style of all hover boxes */
 .hover-box {
 
     visibility: hidden;
@@ -180,6 +205,8 @@ section {
 
 }
 
+/* this top container within work content will take up entire work content container & have space between it & the next container */
+/* position relative so hover box can be absolute within */
 #fanpage {
 
     display: block;
@@ -189,6 +216,7 @@ section {
 
 }
 
+/* fanpage image will take up entire work content top container */
 #fanpage img {
 
     width: 100%;
@@ -198,6 +226,7 @@ section {
 
 }
 
+/* fanpage hover box will position on top of image & at the top left */
 #fanpage-hover-box {
 
     position: absolute;
@@ -207,26 +236,29 @@ section {
 
 }
 
+/* fanpage hover box will now be visible once user hovers over fanpage image */
 #fanpage:hover #fanpage-hover-box {
 
     visibility: visible;
 
 }
 
+/* the fanpage image will have a border when user hovers over fanpage image */
 #fanpage:hover #fanpage-img {
 
-    /* -webkit-filter: blur(1px); */
     border: 5px groove whitesmoke;
 
 }
 
+/* bottom container of work content will take up the entire container */
 #flex-rows {
 
     display: block;
-    /* padding-top: 50px; */
 
 }
 
+/* spacing of the second row of work content */
+/* containers within will display in a row & be spaced evenly */
 #flex-row1 {
 
     padding-top: 20px;
@@ -238,6 +270,8 @@ section {
 
 }
 
+/* first container within second row of work content */
+/* position relative so hover box can be absolute within */
 #contact-landing-page {
 
     flex: 1;
@@ -246,6 +280,7 @@ section {
 
 }
 
+/* first container image will take up 90% of the container */
 #contact-lp-img {
 
     width: 90%;
@@ -254,6 +289,7 @@ section {
 
 }
 
+/* the contact landing page hover box will be positioned on top of image & to top left */
 #contact-lp-hover-box {
 
     position: absolute;
@@ -263,19 +299,22 @@ section {
 
 }
 
+/* contact landing page hover box will now be visible when user hovers over image */
 #contact-landing-page:hover #contact-lp-hover-box {
 
     visibility: visible;
 
 }
 
+/* the image will have a border when user hovers over */
 #contact-landing-page:hover #contact-lp-img {
 
-    /* -webkit-filter: blur(1px); */
     border: 5px groove whitesmoke;
 
 }
 
+/* the second container within second row of content */
+/* position relative so hover box can be absolute within */
 #code-refactor {
 
     flex: 1;
@@ -284,6 +323,7 @@ section {
 
 }
 
+/* the second container image will take up the entire container & be 50px from the top */
 #code-refactor-img {
 
     width: 100%;
@@ -293,6 +333,7 @@ section {
 
 }
 
+/* the code refactor hover box will position on top of the picture & on the top right */
 #code-refactor-hover-box {
 
     position: absolute;
@@ -302,22 +343,23 @@ section {
 
 }
 
+/* the code refactor hover box will be visibile when the user hovers over the image */
 #code-refactor:hover #code-refactor-hover-box {
 
     visibility: visible;
 
 }
 
+/* the image will have a border when the user hovers over */
 #code-refactor:hover #code-refactor-img {
 
-    /* -webkit-filter: blur(1px); */
     border: 5px groove whitesmoke;
 
 }
 
+/* the third row of work content will have containers within that are flexed in a row & spaced evenly */
 #flex-row2 {
 
-    /* padding-bottom: 20px; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -327,16 +369,17 @@ section {
 
 }
 
+/* the first container within the third row of work content will take up 50% of parent container */
+/* positioned relative so hover box can be absolute within */
 #dawn {
 
-    /* width: 60%; */
-    /* margin-right: 100px; */
     flex: 1 0 50%;
     position: relative;
     z-index: 0;
 
 }
 
+/* the image within the first container will take up the entire container & positioned 50px from the top */
 #dawn-img {
 
     position: relative;
@@ -346,6 +389,7 @@ section {
 
 }
 
+/* the hover box will position on top of image & top left */
 #dawn-hover-box {
 
     position: absolute;
@@ -355,23 +399,24 @@ section {
 
 }
 
+/* the hover box will be visible when user hovers over image */
 #dawn:hover #dawn-hover-box {
 
     visibility: visible;
 
 }
 
+/* the image will have a border when user hovers over */
 #dawn:hover #dawn-img {
 
-    /* -webkit-filter: blur(1px); */
     border: 5px groove whitesmoke;
 
 }
 
+/* the second container within third row of work content will have some spacing above & take up 50% of parent container */
+/* positioned relative so hover box can be absolute within */
 #css-cheatsheet {
 
-    /* width: 30%; */
-    /* height: 30%; */
     padding-top: 30px;
     flex: 1 0 50%;
     position: relative;
@@ -379,19 +424,18 @@ section {
 
 }
 
+/* image will take up 80% of parent container & will be positioned to the right */
 #cheatsheet-img {
 
-    /* margin-left: 80px; */
     width: 80%;
-    /* justify-self: flex-start; */
     float: right;
     z-index: 1;
 
 }
 
+/* hover box will be positioned on top of image & top right */
 #cheatsheet-hover-box {
 
-    /* position: absolute; */
     position: absolute;
     top: 30px;
     right: 0px;
@@ -399,19 +443,21 @@ section {
 
 }
 
+/* hover box will be visible when user hovers over image */
 #css-cheatsheet:hover #cheatsheet-hover-box {
 
     visibility: visible;
 
 }
 
+/* the image will have a border when hover over */
 #css-cheatsheet:hover #cheatsheet-img {
 
-    /* -webkit-filter: blur(1px); */
     border: 5px groove whitesmoke;
 
 }
 
+/* work divider vertically stretch the entire work section */
 #work-divider {
 
     display: flex;
@@ -423,6 +469,7 @@ section {
 
 }
 
+/* style & alignment of work heading */
 #work-heading {
 
     display: flex;
@@ -435,6 +482,7 @@ section {
 
 }
 
+/* color gradient between work & contact sections */
 #work-contact-gradient {
 
     width: 100%;
@@ -443,6 +491,7 @@ section {
 
 }
 
+/* style & spacing of contact section */
 #contact {
 
     background-color: #89ddff;
@@ -453,32 +502,45 @@ section {
     padding-bottom: 100px;
     padding-right: 30px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
+/* style & spacing of contact heading */
 #contact h1 {
 
-    display: inline-block;
     font-size: 48px;
     line-height: 50px;
     margin-left: 50px;
+    flex: 1;
+    padding-bottom: 15px;
+    text-align: center;
 
 }
 
+/* spacing of contact navigation bar */
 #contact nav {
 
-    float: right;
+    padding-top: 15px;
+    flex: 1;
+    text-align: center;
 
 }
 
+/* style & spacing of unordered list in navigation bar */
 #contact nav ul {
 
-    display: inline-block;
     list-style-type: none;
     line-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 
 }
 
+/* styling of links contained within list item */
 #contact nav a {
 
     text-decoration: none;
@@ -488,18 +550,14 @@ section {
 
 }
 
-#number:hover {
+/* contacts change color when user hovers over */
+#contact a:hover, #number:hover {
 
     color: white;
 
 }
 
-#contact a:hover {
-
-    color: white;
-
-}
-
+/* color gradient between contact section & footer */
 #contact-footer-gradient {
 
     width: 100%;
@@ -508,6 +566,7 @@ section {
 
 }
 
+/* display & spacing of footer */
 footer {
 
     display: block;
@@ -521,51 +580,22 @@ footer {
 
 }
 
+/* all styling for tablet screens */
 @media screen and (max-width: 992px) {
 
+    /* work heading gets smaller to stay within work section */
     #work-heading {
 
         font-size: 40px;
 
     }
     
-    #contact {
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-    
-    #contact h1 {
-
-        flex: 1;
-        padding-bottom: 15px;
-        text-align: center;
-
-    }
-
-    #contact nav {
-
-        position: relative;
-        padding-top: 15px;
-        flex: 1;
-        text-align: center;
-
-    }
-
-    #contact nav ul {
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-
-    }
-    
 }    
 
+/* all styling for larger phone screens & smaller */
 @media screen and (max-width: 768px) {
 
+    /* header now displayed as column so the heading & navigation bar will be on top of one another & centered */
     header {
 
         display: flex;
@@ -575,6 +605,7 @@ footer {
 
     }
 
+    /* spacing for header heading */
     header h1 {
 
         flex: 1;
@@ -582,10 +613,10 @@ footer {
         padding-bottom: 15px;
         align-self: center;
         margin: 0 auto;
-        /* text-align: center; */
 
     }
 
+    /* spacing for header navigation bar */
     header nav {
 
         position: relative;
@@ -595,6 +626,7 @@ footer {
 
     }
 
+    /* spacing of header unordered list */
     header nav ul {
 
         display: flex;
@@ -603,6 +635,7 @@ footer {
 
     }
 
+    /* now work section is displayed as column so heading, divider, & work content will be stacked on top of one another instead of in a row */
     #work {
 
         flex-direction: column;
@@ -612,6 +645,7 @@ footer {
 
     }
 
+    /* work heading will be the first container displayed & will take up entire container */
     #work-heading {
 
         order: 1;
@@ -624,6 +658,7 @@ footer {
 
     }
 
+    /* spacing & alignment of heading within work header container */
     #work-heading h1 {
 
         text-align: center;
@@ -631,6 +666,8 @@ footer {
 
     }
 
+    /* divider will now be the second container displayed & will take up entire container */
+    /* divider will now horizontally take up entire container */
     #work-divider {
 
         order: 2;
@@ -644,6 +681,7 @@ footer {
 
     }
 
+    /* work content will now be the third container displayed & will take up entire container */
     #work-content {
 
         order: 3;
@@ -657,6 +695,7 @@ footer {
 
     }
 
+    /* fanpage hover box will now position to top right of image & will be visible at all times */
     #fanpage-hover-box {
 
         right: 0px;
@@ -665,6 +704,7 @@ footer {
 
     }
 
+    /* the second row of work content will now be displayed as column so two containers within will be positioned one on top of the other rather than in a row */
     #flex-row1 {
 
         flex-direction: column;
@@ -672,12 +712,14 @@ footer {
 
     }
 
+    /* spacing of first container within 'second row of work content' */
     #contact-landing-page {
         
         padding-left: 55px;
 
     }
 
+    /* hover box will be visible at all times */
     #contact-lp-hover-box {
 
         left: 55px;
@@ -685,17 +727,20 @@ footer {
         
     }
 
+    /* spacing of second container within 'second row of work content' */
     #code-refactor {
 
         margin-top: 40px;
 
     }
 
+    /* positioning of second container image */
     #code-refactor-img {
 
         top: 0px;
     }
 
+    /* hover box will now be visible at all times */
     #code-refactor-hover-box {
 
         top: 0px;
@@ -703,6 +748,7 @@ footer {
 
     }
 
+    /* 'third row of work content' will now be displayed as column so two containers within will be positioned one on top of the other rather than in a row */
     #flex-row2 {
 
         flex-direction: column;
@@ -710,11 +756,13 @@ footer {
 
     }
     
+    /* spacing of first container within 'third row of work content' */
     #dawn {
 
         margin-bottom: 10px;
     }
 
+    /* spacing of first container image */
     #dawn-img {
 
         top: 0px;
@@ -722,6 +770,7 @@ footer {
 
     }
     
+    /* hover box will now be visible at all times */
     #dawn-hover-box {
 
         top: 20px;
@@ -729,22 +778,39 @@ footer {
 
     }
 
+    /* spacing of second container within 'third row of work content' */
     #css-cheatsheet {
 
         margin-top: 10px;
-        padding-right: 120px;
-        padding-left: 55px;
+        padding-right: 50px;
+        padding-left: 40px;
         justify-content: center;
 
     }
 
+    /* second container image will now take up entire container */
+    #cheatsheet-img {
+
+        width: 100%;
+
+    }
+
+    /* hover box will be visible at all times */
     #cheatsheet-hover-box {
 
-        right: 120px;
+        right: 50px;
         visibility: visible;
 
     }
 
+    /* spacing of contact section heading */
+    #contact h1 {
+
+        margin-left: 0px;
+        
+    }
+
+    /* contact section navigation bar items will now be displayed as a column */
     #contact a {
 
         display: block;
