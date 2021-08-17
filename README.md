@@ -8,6 +8,8 @@ The 'work' section will continue to grow as my portfolio does. Each new project 
 
 This porfolio has been a wonderful challenge that has helped me grow as a web developer, allowing me to quickly learn & strengthen my problem-solving, researching, & design skills. It has shown me my weaknesses as well as my strengths & with this new awareness, I will continue to refine my abilities at becoming a well-rounded developer. 
 
+To access the deployed portfolio, please click here : https://lyndseyjw.github.io/full-stack-developer-portfolio/
+
 I hope you enjoy!
 
-![Lyndsey Full Stack Develop Porfolio](./full-page-screenshot.png)
+![Lyndsey Full Stack Develop Porfolio](./assets/images/full-page-screenshot.png)
