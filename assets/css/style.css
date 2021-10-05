@@ -227,19 +227,14 @@ section {
 
 }
 
-#content-container {
-
-    display: flex;
-}
-
 /* work content (photos & links) will take up 75% of the page & each container within will take up entire work content container */
 /* spacing on the left & between work section & below color gradient */
 #work-content {
 
-    width: 75%;
-    height: auto;
+    /* width: 75%; */
+    /* height: auto; */
     padding-bottom: 100px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     display: block;
 
 }
@@ -253,7 +248,6 @@ section {
     border: 5px solid whitesmoke;
     color: #194f96;
     padding: 20px;
-
 }
 
 /* this top container within work content will take up entire work content container & have space between it & the next container */
@@ -513,10 +507,10 @@ section {
 /* work divider vertically stretch the entire work section */
 #work-divider {
 
-    display: flex;
-    align-self: stretch;
-    margin-left: 30px;
-    margin-right: 30px;
+    /* display: flex;
+    align-self: stretch; */
+    /* margin-left: 30px; */
+    /* margin-right: 30px; */
     width: 5px;
     background-color: #89ddff;
 
@@ -525,14 +519,18 @@ section {
 /* style & alignment of work heading */
 #work-heading {
 
-    display: flex;
-    width: 24%;
-    height: auto;
-    margin-right: 30px;
-    justify-items: flex-start;
+    /* display: flex; */
+    /* width: 24%; */
+    /* height: auto; */
+    /* margin-right: 30px; */
+    /* justify-items: flex-start; */
     color: #89ddff;
-    font-size: 48px;
+    text-align: center;
+}
 
+#work-heading h1 {
+
+    font-size: 60px;
 }
 
 /* color gradient between work & contact sections */
@@ -634,16 +632,16 @@ footer {
 }
 
 /* all styling for tablet screens */
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) { */
 
     /* work heading gets smaller to stay within work section */
-    #work-heading {
+    /* #work-heading {
 
         font-size: 40px;
 
     }
     
-}    
+}     */
 
 /* all styling for larger phone screens & smaller */
 @media screen and (max-width: 768px) {
@@ -689,17 +687,17 @@ footer {
     }
 
     /* now work section is displayed as column so heading, divider, & work content will be stacked on top of one another instead of in a row */
-    #work {
+    /* #work {
 
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         padding: 20px;
 
-    }
+    } */
 
     /* work heading will be the first container displayed & will take up entire container */
-    #work-heading {
+    /* #work-heading {
 
         order: 1;
         flex: 1;
@@ -709,19 +707,19 @@ footer {
         margin: 0 auto;
         align-self: center;
 
-    }
+    } */
 
     /* spacing & alignment of heading within work header container */
-    #work-heading h1 {
+    /* #work-heading h1 {
 
         text-align: center;
         margin-bottom: 40px;
 
-    }
+    } */
 
     /* divider will now be the second container displayed & will take up entire container */
     /* divider will now horizontally take up entire container */
-    #work-divider {
+    /* #work-divider {
 
         order: 2;
         flex: 1;
@@ -732,10 +730,10 @@ footer {
         margin-right: 0px;
         padding-bottom: 5px;
 
-    }
+    } */
 
     /* work content will now be the third container displayed & will take up entire container */
-    #work-content {
+    /* #work-content {
 
         order: 3;
         flex: 1;
@@ -746,125 +744,125 @@ footer {
         display: flex;
         flex-direction: column;
 
-    }
+    } */
 
     /* fanpage hover box will now position to top right of image & will be visible at all times */
-    #fanpage-hover-box {
+    /* #fanpage-hover-box {
 
         right: 0px;
         left: auto;
         visibility: visible;
 
-    }
+    } */
 
     /* the second row of work content will now be displayed as column so two containers within will be positioned one on top of the other rather than in a row */
-    #flex-row1 {
+    /* #flex-row1 {
 
         flex-direction: column;
         align-content: center;
 
-    }
+    } */
 
     /* spacing of first container within 'second row of work content' */
-    #contact-landing-page {
+    /* #contact-landing-page {
         
         padding-left: 55px;
 
-    }
+    } */
 
     /* hover box will be visible at all times */
-    #contact-lp-hover-box {
+    /* #contact-lp-hover-box {
 
         left: 55px;
         visibility: visible;
         
-    }
+    } */
 
     /* spacing of second container within 'second row of work content' */
-    #code-refactor {
+    /* #code-refactor {
 
         margin-top: 40px;
 
-    }
+    } */
 
     /* positioning of second container image */
-    #code-refactor-img {
+    /* #code-refactor-img {
 
         top: 0px;
-    }
+    } */
 
     /* hover box will now be visible at all times */
-    #code-refactor-hover-box {
+    /* #code-refactor-hover-box {
 
         top: 0px;
         visibility: visible;
 
-    }
+    } */
 
     /* 'third row of work content' will now be displayed as column so two containers within will be positioned one on top of the other rather than in a row */
-    #flex-row2 {
+    /* #flex-row2 {
 
         flex-direction: column;
         align-content: center;
 
-    }
+    } */
     
     /* spacing of first container within 'third row of work content' */
-    #dawn {
+    /* #dawn {
 
         margin-bottom: 10px;
-    }
+    } */
 
     /* spacing of first container image */
-    #dawn-img {
+    /* #dawn-img {
 
         top: 0px;
         margin-top: 20px;
 
-    }
+    } */
     
-    /* hover box will now be visible at all times */
+    /* hover box will now be visible at all times
     #dawn-hover-box {
 
         top: 20px;
         visibility: visible;
 
-    }
+    } */
 
     /* spacing of second container within 'third row of work content' */
-    #css-cheatsheet {
+    /* #css-cheatsheet {
 
         margin-top: 10px;
         padding-right: 50px;
         padding-left: 40px;
         justify-content: center;
 
-    }
+    } */
 
     /* second container image will now take up entire container */
-    #cheatsheet-img {
+    /* #cheatsheet-img {
 
         width: 100%;
 
-    }
+    } */
 
     /* hover box will be visible at all times */
-    #cheatsheet-hover-box {
+    /* #cheatsheet-hover-box {
 
         right: 50px;
         visibility: visible;
 
-    }
+    } */
 
     /* spacing of contact section heading */
-    #contact h1 {
+    /* #contact h1 {
 
         margin-left: 0px;
         
-    }
+    } */
 
     /* contact section navigation bar items will now be displayed as a column */
-    #contact a {
+    /* #contact a {
 
         display: block;
 

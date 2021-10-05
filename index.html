@@ -14,6 +14,8 @@
 
     <link rel="shortcut icon" type="image/jpg" href="./assets/images/dahlia.jpg"/>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
@@ -121,141 +123,142 @@
                 </ul>
             </nav>
 
-            <div id="content-container">
+            <div class="container-fluid">
                 <!-- left flex box within work section (all work images & links) -->
-                <div id="work-content">
+                <div class="row">
 
-                    <!-- top container within work content (flex column) -->
-                    <a id="fanpage-hover" href="https://parksmart2021.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                    <!-- right flex box within work section (work heading) -->
+                    <div id="work-heading" class="col-12 col-md-2">
 
-                        <div id="fanpage">
-
-                            <!-- first row of work content .. image & link within top container (fanpage) -->
-                            <img id="fanpage-img" src="./assets/images/parksmart.png" alt="Aerial View of 4-way Intersection">
-
-                            <!-- hover box for fanpage -->
-                            <div class="hover-box" id="fanpage-hover-box">
-
-                                <h3>Park Smart</h3>
-
-                                <p>HTML5, Advanced CSS, Javscript, Sequelize, Express, NPMs, Heroku</p>
-
-                            </div>
-                        
-                        </div>
-                    </a>
-
-                    <!-- bottom container within work content (flex column) -->
-                    <div id="flex-rows">
-
-                        <!-- second row of work content .. contains two flex boxes -->
-                        <div id="flex-row1">
-
-                            <!-- first flex box within second row of work content (contact landing page) -->
-                            <div id="contact-landing-page">
-
-                                <!-- image & link for contact landing page -->
-                                <a href="https://sheltered-journey-74962.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-
-                                    <!-- image courtesy of onblastblog.com -->
-                                    <img id="contact-lp-img" src="./assets/images/techblog.jpg" alt="holograms of technology platforms emerging from a tablet in someone's palm">
-            
-                                </a>
-
-                                <!-- hover box for contact landing page -->
-                                <div class="hover-box" id="contact-lp-hover-box">
-
-                                    <h3>Tech Blog</h3>
-
-                                    <p>HTML5, CSS, Javascript,</p>
-                                    <p>Sequelize, Express, NPMs, Heroku</p>
-
-                                </div>
-
-                            </div>
-
-                            <!-- second flex box within second row of work content (code refactor) -->
-                            <div id="code-refactor">
-
-                                <!-- image & link for code refactor -->
-                                <a href="https://lyndseyjw.github.io/weather-dashboard/" target="_blank" rel="noopener noreferrer">
-
-                                    <img id="code-refactor-img" src="./assets/images/weather-dashboard.png" alt="weather emojis - sunny, cloudy, rainy, lightning">
-            
-                                </a>
-
-                                <!-- hover box for code refactor -->
-                                <div class="hover-box" id="code-refactor-hover-box">
-
-                                    <h3>Weather Dashboard</h3>
-
-                                    <p>HTML5, CSS, JQuery</p>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <!-- third row of work content .. contains two flex boxes-->
-                        <div id="flex-row2">
-
-                            <!-- first flex box within third row of work content (dawn) -->
-                            <div id="dawn">
-
-                                <!-- image & link for dawn -->
-                                <a href="https://github.com/lyndseyjw/employee-tracker-database" target="_blank" rel="noopener noreferrer">
-
-                                    <img id="dawn-img" src="./assets/images/add-role copy.png" alt="rock band performing on stage with multi-colored lights surrounding them">
-            
-                                </a>
-
-                                <!-- hover box for dawn -->
-                                <div class="hover-box" id="dawn-hover-box">
-
-                                    <h3>Backend Employee Tracker Database</h3>
-
-                                    <p>JavaScript, Node, NPMs, mySQL</p>
-
-                                </div>
-
-                            </div>
-
-                            <!-- second flex box within third row of work content (css cheatsheet) -->
-                            <div id="css-cheatsheet">
-
-                                <!-- image & link for css cheatsheet -->
-                                <a href="https://lyndseyjw.github.io/timed-quiz-with-saved-high-scores/" target="_blank" rel="noopener noreferrer">
-
-                                    <img id="cheatsheet-img" src="./assets/images/timed-quiz.jpg" alt="a countdown graphic displaying the number 5">
-            
-                                </a>
-
-                                <!-- hover box for css cheatsheet -->
-                                <div class="hover-box" id="cheatsheet-hover-box">
-
-                                    <h3>Timed Quiz</h3>
-
-                                    <p>HTML5, Advanced CSS, Javascript</p>
-
-                                </div>
-
-                            </div>
-
-                        </div>
+                        <h1>WORK</h1>
                     
                     </div>
+
+                    <!-- middle flex box within work section (divider separating work content & heading) -->
+                    <!-- <div class="col-12 col-md-1"></div> -->
+                    <div id="work-divider" class="col-12 col-md-1"></div>
+                    <div class="col-12 col-md-1"></div>
+                    
+                    <div id="work-content" class="col-12 col-md-8">
+
+                        <!-- top container within work content (flex column) -->
+                        <a id="fanpage-hover" href="https://parksmart2021.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+
+                            <div id="fanpage">
+
+                                <!-- first row of work content .. image & link within top container (fanpage) -->
+                                <img id="fanpage-img" src="./assets/images/parksmart.png" alt="Aerial View of 4-way Intersection">
+
+                                <!-- hover box for fanpage -->
+                                <div class="hover-box" id="fanpage-hover-box">
+
+                                    <h3>Park Smart</h3>
+
+                                    <p>HTML5, Advanced CSS, Javscript, Sequelize, Express, NPMs, Heroku</p>
+
+                                </div>
+                            
+                            </div>
+                        </a>
+
+                        <!-- bottom container within work content (flex column) -->
+                        <div id="flex-rows">
+
+                            <!-- second row of work content .. contains two flex boxes -->
+                            <div id="flex-row1">
+
+                                <!-- first flex box within second row of work content (contact landing page) -->
+                                <div id="contact-landing-page">
+
+                                    <!-- image & link for contact landing page -->
+                                    <a href="https://sheltered-journey-74962.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+
+                                        <!-- image courtesy of onblastblog.com -->
+                                        <img id="contact-lp-img" src="./assets/images/techblog.jpg" alt="holograms of technology platforms emerging from a tablet in someone's palm">
                 
-                </div>
+                                    </a>
 
-                <!-- middle flex box within work section (divider separating work content & heading) -->
-                <div id="work-divider"></div>
+                                    <!-- hover box for contact landing page -->
+                                    <div class="hover-box" id="contact-lp-hover-box">
 
-                <!-- right flex box within work section (work heading) -->
-                <div id="work-heading">
+                                        <h3>Tech Blog</h3>
 
-                    <h1>WORK</h1>
+                                        <p>HTML5, CSS, Javascript,</p>
+                                        <p>Sequelize, Express, NPMs, Heroku</p>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- second flex box within second row of work content (code refactor) -->
+                                <div id="code-refactor">
+
+                                    <!-- image & link for code refactor -->
+                                    <a href="https://lyndseyjw.github.io/weather-dashboard/" target="_blank" rel="noopener noreferrer">
+
+                                        <img id="code-refactor-img" src="./assets/images/weather-dashboard.png" alt="weather emojis - sunny, cloudy, rainy, lightning">
                 
+                                    </a>
+
+                                    <!-- hover box for code refactor -->
+                                    <div class="hover-box" id="code-refactor-hover-box">
+
+                                        <h3>Weather Dashboard</h3>
+
+                                        <p>HTML5, CSS, JQuery</p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- third row of work content .. contains two flex boxes-->
+                            <div id="flex-row2">
+
+                                <!-- first flex box within third row of work content (dawn) -->
+                                <div id="dawn">
+
+                                    <!-- image & link for dawn -->
+                                    <a href="https://github.com/lyndseyjw/employee-tracker-database" target="_blank" rel="noopener noreferrer">
+
+                                        <img id="dawn-img" src="./assets/images/add-role copy.png" alt="rock band performing on stage with multi-colored lights surrounding them">
+                
+                                    </a>
+
+                                    <!-- hover box for dawn -->
+                                    <div class="hover-box" id="dawn-hover-box">
+
+                                        <h3>Backend Employee Tracker Database</h3>
+
+                                        <p>JavaScript, Node, NPMs, mySQL</p>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- second flex box within third row of work content (css cheatsheet) -->
+                                <div id="css-cheatsheet">
+
+                                    <!-- image & link for css cheatsheet -->
+                                    <a href="https://lyndseyjw.github.io/timed-quiz-with-saved-high-scores/" target="_blank" rel="noopener noreferrer">
+
+                                        <img id="cheatsheet-img" src="./assets/images/timed-quiz.jpg" alt="a countdown graphic displaying the number 5">
+                
+                                    </a>
+
+                                    <!-- hover box for css cheatsheet -->
+                                    <div class="hover-box" id="cheatsheet-hover-box">
+
+                                        <h3>Timed Quiz</h3>
+
+                                        <p>HTML5, Advanced CSS, Javascript</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
