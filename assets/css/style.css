@@ -300,7 +300,7 @@ section {
 #fanpage:hover #fanpage-img {
 
     border: 5px groove whitesmoke;
-    content: url('../images/project-screenshot.png');
+    /* content: url('../images/project-screenshot.png'); */
 }
 
 /* bottom container of work content will take up the entire container */
@@ -363,7 +363,7 @@ section {
 #contact-landing-page:hover #contact-lp-img {
 
     border: 5px groove whitesmoke;
-    content: url('../images/randomly-generated-password.png');
+    /* content: url('../images/randomly-generated-password.png'); */
 }
 
 /* the second container within second row of content */
@@ -407,7 +407,7 @@ section {
 #code-refactor:hover #code-refactor-img {
 
     border: 5px groove whitesmoke;
-    content: url('../images/deployed-weather.png');
+    /* content: url('../images/deployed-weather.png'); */
 }
 
 /* the third row of work content will have containers within that are flexed in a row & spaced evenly */
